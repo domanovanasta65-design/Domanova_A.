@@ -1,0 +1,9 @@
+# Ввод исходного количества минут
+all_minutes = int(input("Введите количество минут: "))
+
+# Считаем часы и оставшиеся минуты
+hours = all_minutes // 60
+minutes = all_minutes % 60
+
+# Вывод
+print(f"{all_minutes} минуты - это {hours} час {minutes} минут.")
