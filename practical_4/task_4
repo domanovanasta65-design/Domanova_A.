@@ -1,0 +1,7 @@
+# Считываем количество школьников и мандаринов
+students = int(input())
+mandarins = int(input())
+
+# Вывод
+print(mandarins // students)
+print(mandarins % students)
