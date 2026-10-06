@@ -1,0 +1,23 @@
+# Ввод вещественного числа (например: 3.6 или -2.4)
+x = float(input("Введите число x: "))
+
+# Округление вниз
+# Для положительных чисел int(x) округляет вниз
+if x >= 0:
+    floor_x = int(x)
+else:
+    floor_x = int(x) - 1
+
+# Находим округление вверх
+if x == int(x):
+    ceil_x = int(x)
+elif x >= 0:
+    ceil_x = int(x) + 1
+else:
+    ceil_x = int(x)
+
+# Считаем сумму по формуле [x] + ⌈x⌉
+result = floor_x + ceil_x
+
+# Вывод
+print(result)
