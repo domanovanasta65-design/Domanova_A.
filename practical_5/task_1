@@ -1,0 +1,14 @@
+# Константа налоговой ставки
+NALOG_RATE = 0.13
+
+# Годовой доход
+doxod = float(input("Введите ваш годовой доход: "))
+
+# Рассчитываем налог и чистую сумму
+summa_naloga = doxod * NALOG_RATE
+na_ruki = doxod - summa_naloga
+
+# Результат
+print(f"Общая сумма дохода: {doxod:,.2f} руб.")
+print(f"Сумма рассчитанного налога: {summa_naloga:,.2f} руб.")
+print(f"Сумма после вычета налога: {na_ruki:,.2f} руб.")
