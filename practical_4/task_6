@@ -1,0 +1,9 @@
+import math
+
+x = float(input())
+
+r = x * 3.14159265 / 180
+
+ans = math.sin(r) + math.cos(r) + (math.tan(r))**2
+
+print(ans)
