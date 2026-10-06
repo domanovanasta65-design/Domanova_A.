@@ -1,0 +1,12 @@
+# Константа курса доллара к рублю
+USD_TO_RUB = 95.50
+
+# Описание функции
+def convert_usd_to_rub(amount_usd):
+    """Конвертирует доллары в рубли."""
+    return amount_usd * USD_TO_RUB
+
+# Ввод, расчет и вывод
+dollari = float(input("Введите сумму в долларах: "))
+rubli = convert_usd_to_rub(dollari)
+print(f"Сумма в рублях: {rubli:,.2f} руб.")
