@@ -1,0 +1,6 @@
+place = int(input())
+
+# Формула нахождения номера купе
+kupe = (place - 1) // 4 + 1
+
+print(kupe)
